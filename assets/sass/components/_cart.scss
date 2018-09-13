@@ -28,9 +28,11 @@
 }
 
 .container {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
+  // background-color: #f2f2f2;
+  background-color: transparentize(_palette(accent4), 0.3);
+  padding: 50px 50px 15px 20px;
+  margin: 50px 50px 10px 50px;
+  border: 3px solid _palette(yellow);
   border-radius: 3px;
 }
 
@@ -38,7 +40,7 @@ input[type="text"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 2px solid _palette(bg-accent);
   border-radius: 3px;
 }
 
@@ -71,7 +73,7 @@ label {
 
 span.price {
   float: right;
-  color: grey;
+  color: _palette(blue);
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
